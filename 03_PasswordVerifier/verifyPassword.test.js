@@ -84,3 +84,6 @@ test('"" is an invalid password', () => {
   expect(verifyPassword("")).toBeFalsy()
 })
 
+test('null is an invalid password', () => {
+  expect(verifyPassword(null)).toBeFalsy()
+})
